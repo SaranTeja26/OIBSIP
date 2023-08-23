@@ -2,7 +2,7 @@
 # CALCULATOR 
 
 
-![Simple Calculator](images/calculator_preview.png)
+![Simple Calculator](Calculator.png)
 
 Welcome to the Simple Calculator project! This is a basic web-based calculator application built using HTML, CSS, and JavaScript. The calculator allows users to perform simple arithmetic operations such as addition, subtraction, multiplication, and division.
 
@@ -17,9 +17,7 @@ Welcome to the Simple Calculator project! This is a basic web-based calculator a
 - [Contributing](#contributing)
 
 
-## Demo:
 
-Check out the live demo of the Simple Calculator [here](https://your-demo-link.com).
 
 ## Features:
 
@@ -43,7 +41,7 @@ To run this project locally, you need to have a web browser installed on your co
 4. Press the "=" button to see the result of your calculation.
 5. To clear the current input or calculation, press the "C" button.
 
-![Calculator Interface](images/calculator_interface.png)
+![Calculator Interface](Calculator.png)
 
 ## Contributing:
 
