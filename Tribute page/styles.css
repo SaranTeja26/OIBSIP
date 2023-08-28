@@ -1,0 +1,115 @@
+/* styles.css */
+
+
+body, h1, h2, h3, p, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   
+    line-height: 1.8;
+    font-family:'Times New Roman', Times, serif;
+    font-size: larger; ;    
+}   
+
+
+/* Header styles */
+header {
+    background-color:white;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    font-size: larger;
+}
+
+header img{
+    border-radius:  1.5rem;
+}
+
+/* Main content styles */
+section {
+    padding: 30px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* Aside styles */
+aside {
+    width: 45%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: #DFF0D8;
+}
+
+/* Image styles */
+figure {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Links styles */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Blockquote styles */
+blockquote {
+    margin: 20px 0;
+    padding: 10px;
+    border-left: 3px solid #4CAF50;
+    background-color: #F3F3F3;
+}
+
+/* Resources section styles */
+#res {
+    margin-top: 40px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    aside {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+}
