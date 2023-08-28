@@ -1,6 +1,6 @@
 # Tribute Page README
 
-![Tribute Page Screenshot](screenshot.png)
+![Tribute Page Screenshot](/TASK_2_TRIBUTEPAGE/screenshot.png)
 
 ## Table of Contents
 
