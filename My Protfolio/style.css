@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+    --bgOrange: #ff9900;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header {
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+}
+
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    padding: 0 9%;
+    background: url('/images/home.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+
+.home-content {
+    max-width: 60rem;
+}
+
+.home-content h1 {
+    font-size: 4.6rem;
+    font-weight: 800;
+    line-height: 1;
+    padding: 1rem;
+}
+
+.home-content .text-animate {
+    position: relative;
+    width: 32.8rem;
+    
+}
+
+.home-content .text-animate h3 {
+    font-size: 5.2rem;
+    font-weight: bolder;
+    color: transparent;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    -webkit-text-stroke: 0.7px var(--main-color);
+}
+
+.home-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 4rem;
+}
+
+.btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 34.5rem;
+    height: 5rem;
+}
+
+.btn-box .btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    height: 100%;
+    background: var(--main-color);
+    border: 0.2rem solid var(--main-color);
+    border-radius: 0.8rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    color: var(--bg-color);
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-box .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-box .btn:hover {
+    color: var(--second-bg-color);
+}
+
+.btn-box .btn:nth-child(2) {
+    background: transparent;
+    color: var(--main-color);
+}
+
+.btn-box .btn:nth-child(2):hover {
+    color: var(--second-bg-color);
+}
+
+.btn-box .btn:nth-child(1):hover {
+    color: var(--main-color);
+}
+
+.btn-box .btn:nth-child(2)::before {
+    background: var(--main-color);
+}
+
+.btn-box .btn:hover::before {
+    width: 100%;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 4rem;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 0.2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.home-sci a:hover {
+    color: var(--bg-color);
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:var(--main-color);
+    z-index: -1;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+
+.home-imgHover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    width: 45%;
+    background: transparent;
+    transition: 3s;
+}
+
+.home-imgHover:hover {
+    background: var(--bg-color);
+    opacity:.8; 
+}
+
+#about {
+    background: var(--second-bg-color); 
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .heading {
+    font-size: 6rem;
+    font-weight: 600;
+    color: var(--text-color);
+    padding: 2rem;
+    text-align: center;
+}
+
+.about .heading span {
+    color: var(--main-color);
+}
+
+.about-content {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+.about-img {
+    position: relative;
+    display: inline-block;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    margin: 2rem auto;
+    overflow: hidden;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 65%;
+    border: .5rem solid var(--main-color);
+}
+
+.about-content h2 {
+    font-size: 4rem;
+    padding: 3rem;
+}
+
+.about-content .btn-box .btn {
+    margin: 2rem;
+    margin-left: 60%;
+    height: 5rem;
+    width: 20rem;
+  
+}
+
+.education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
+  }
+  
+  .education .education-row {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+  }
+  
+  .education .education-column {
+    flex: 1 1 40rem;
+    text-align: left;
+  }
+  
+  .education .title {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem;
+  }
+  
+  .education .education-box {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .education .education-content {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .education .education-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+  
+.education .education-content:hover::before{
+    width: 100%;
+}
+  .education .education-content::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -0.6rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: var(--main-color);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .education .education-content .content {
+    position: relative;
+    padding: 1.5rem;
+    border: 0.2rem solid var(--main-color);
+    border-radius: 0.6rem;
+  }
+  
+  .education .education-content .content .year {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    padding-bottom: 0.5rem;
+  }
+  
+  .education .education-content .content h3 {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+  }
+  
+  .education .education-content .content p {
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+  }
+  .heading {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--text-color);
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .heading span {
+    color: var(--main-color);
+  }
+  
+  .heading::before,
+  .heading::after {
+    content: "";
+    display: inline-block;
+    width: 3rem;
+    height: 0.2rem;
+    background-color: var(--main-color);
+    vertical-align: middle;
+    margin: 0 1rem;
+  }
+  
+  .heading::before {
+    margin-left: 0;
+  }
+  
+  .heading::after {
+    margin-right: 0;
+  }
+  
+  .skills {
+    min-height: auto;
+    padding-bottom: 7rem;
+    background: var(--second-bg-color);
+  }
+  
+  .skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+  
+  .skills-column {
+    flex: 1 1 40rem;
+  }
+  
+  .skills-column .title {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem;
+  }
+  
+  .skills-box .skills-content {
+    position: relative;
+    border: 0.2rem solid var(--main-color);
+    border-radius: 0.6rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .skills-content .progress {
+    padding: 1rem 0;
+  }
+  
+  .skills-content .progress h3 {
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .skills-content .progress h3 span {
+    color: var(--main-color);
+  }
+  
+  .skills-content .progress .bar {
+    height: 2.5rem;
+    border-radius: 0.6rem;
+    border: 0.2rem solid var(--main-color);
+    padding: 0.5rem;
+    margin: 1rem 0;
+  }
+  
+  .skills-content .progress .bar span {
+    display: block;
+    height: 100%;
+    border-radius: 0.3rem;
+    background: var(--main-color);
+  }
+.skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
+    width:90%
+} 
+.skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span{
+    width:80%
+} 
+.skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span{
+    width:65%
+} 
+.skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span{
+    width:80%
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span{
+    width:70%
+} 
+.skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span{
+    width:75%
+} 
+.skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span{
+    width:60%
+} 
+
+.contact {
+    min-height: auto;
+    padding-bottom: 7rem;
+  }
+  
+  .contact form {
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .contact form .input-box {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ 
+  }
+  
+  .contact form  .input-box .input-field {
+    position: relative;
+    width: 49%;
+    margin: 0.8rem 0;
+    padding: .2rem;
+  }
+  
+  .contact form .input-field input,
+  .contact form .textarea-field textarea {
+    width: 100%;
+    height: 100%;
+    padding: 1.8rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: transparent;
+    border-radius: .6rem;
+    border: .2rem solid var(--main-color);
+  }
+  .contact form .btn-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem; 
+    margin-left: 25%;
+
+}
+
+.contact form .input-field input::placeholder,
+.contact form .textarea-field textarea:placeholder{
+    color: var(--text-color);
+}
+
+.contact form .textarea-field{
+    position: relative;
+    margin: .8rem 0 2.7rem;
+    display: flex;
+}
+.contact form .textarea-field textarea{
+    resize: none;
+}
+footer {
+    position: relative;
+    margin-top: -1px;
+    background-color: var(--second-bg-color);
+    padding: 5rem;
+  }
+  
+  .footer-wrapper {
+    display: flex;
+    gap: 1rem;
+    padding: 1.2rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-faded-text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: var(--text-color);
+    user-select: none;
+    font-size: 6rem;
+    opacity: 5;
+    justify-content: end;    
+    margin-left: 65%;
+  }
+
+
+  
+  .icon-wrapper {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .icon-wrapper a i {
+    font-size: 4rem;
+    color: white;
+    transition: color 1.2s;
+    transition: transform 1s;
+    padding: 1.5rem;
+  }
+  
+  .icon-wrapper a:hover i {
+    color: var(--main-color);
+    transform: scale(2);
+  }
+  
+
+ 
+
