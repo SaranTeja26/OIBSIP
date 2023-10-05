@@ -1,6 +1,6 @@
 # Tribute Page README
 
-![Tribute Page Screenshot](/TASK_2_TRIBUTEPAGE/screenshot.png)
+![Tribute Page Screenshot](https://github.com/SaranTeja26/OIBSIP/blob/main/oibsip_2/Screenshot%202023-10-05%20101916.png)
 
 ## Table of Contents
 
